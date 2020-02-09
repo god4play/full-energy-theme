@@ -1,0 +1,494 @@
+/*
+Theme Name: Full-Energy
+Theme URI:
+Author: Lorenzo Corallo
+Author URI:
+Description: Full-Energy's theme
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: fe
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  font-family: 'Montserrat';
+  color: #000;
+}
+
+*, *::after, *::before {box-sizing: border-box;}
+
+.img-fluid-feed {
+    max-width: 317px;
+    height: auto;
+}
+
+.container, .container-fluid {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+
+.animate{
+		-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+}
+
+hr{
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  max-width: 90%;
+}
+
+/***************************************************/
+/** Button **/
+
+.btn, btn-outline-dark{
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 60px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.15s; /* Safari */
+  transition-duration: 0.15s;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #41c155;
+  border-color: #41c155;
+  color: #fff;
+  -webkit-transition-duration: 0.15s; /* Safari */
+  transition-duration: 0.15s;
+}
+
+/****************************************************/
+
+
+/****
+Navbar
+****/
+.navbar{
+  overflow: hidden;
+  transition: 0.2s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;}
+
+.navbar-default, .navbar-brand, .nav-link{
+    color: #000;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+
+  }
+
+.navbar-default a{
+  transition: 0.15s;
+}
+
+.navbar-default a:hover{
+  color: #41c155;
+}
+
+
+.navbar-brand img{
+  height: 90px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+
+/********
+Cover
+********/
+
+.carousel, .slide, .caruousel-item{
+  height: 1000px;
+  width: 100%;
+  background: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.cover-filter{
+  background: #11331E;
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0.5
+}
+
+.carousel-caption{
+  padding-bottom: 200px;
+  text-transform: uppercase;
+  text-align: middle;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 769px) {
+  .carousel-caption h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 0px 3px 6px #000000;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .carousel-caption h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 3px 6px #000000;
+    text-align: center;
+  }
+}
+
+/****************************************/
+
+.carousel-caption p{
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+/*******
+Goals
+*******/
+#goals{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+
+#goals h3{
+  padding-bottom: 30px;
+}
+
+#goals img{
+  max-width: 18px;
+  }
+
+#goals span{
+  vertical-align: middle;
+}
+
+#goals p{
+  margin: 0;
+  margin-bottom: 0rem;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Montserrat;
+}
+
+.row-goals{
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*******
+Private Recharge
+*******/
+
+#private-recharge{
+  background-color: #f4eee1;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+#private-recharge h3{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#private-recharge p{
+  line-height: 25.6px;
+  font-style: 16px;
+}
+
+#private-recharge img{
+  width: 100%;
+}
+
+#private-recharge .btn{
+  color: #25A455;
+  border-color: #fff;
+  border-width: 0px;
+  text-transform: none;
+  font-size: 16px;
+  margin-top: 0px;
+  padding: 0px 0px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#private-recharge .btn a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: none;
+}
+
+#private-recharge .btn:hover {
+  background-color: #f4eee1;
+  border: 0px;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#private-recharge .arrow{
+  max-width: 16px;
+  max-height: 16px;
+  margin-bottom: 4px;
+}
+
+#private-recharge hr{
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  color: #000;
+}
+/*******
+business Recharge
+*******/
+
+#business-recharge{
+  background-color: #f4eee1;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+#business-recharge h3{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#business-recharge p{
+  line-height: 25.6px;
+  font-style: 16px;
+}
+
+#business-recharge img{
+  width: 100%;
+}
+
+#business-recharge .btn{
+  color: #25A455;
+  border-color: #fff;
+  border-width: 0px;
+  text-transform: none;
+  font-size: 16px;
+  margin-top: 0px;
+  padding: 0px 0px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business-recharge .btn a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: none;
+}
+
+#business-recharge .btn:hover {
+  background-color: #f4eee1;
+  border: 0px;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business-recharge .arrow{
+  max-width: 16px;
+  max-height: 16px;
+  margin-bottom: 4px;
+}
+
+#business-recharge hr{
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  color: #000;
+}
+
+/*******
+footer
+*******/
+
+.footer p{margin-bottom: 0;}
+
+#footer-nav, #footer-widgets{
+  background-color: rgba(0, 0, 0, 0.83);
+  color: #fff;
+  width: 100%;
+  height: 175px;
+  padding: 0;
+}
+
+#footer-nav .nav{
+  overflow: hidden;
+  transition: 0.2s; /* Adds a transition effect when the padding is decreased */
+  width: 100%;
+}
+
+#footer-nav .nav, #footer-nav .nav-brand, #footer-nav .nav-link{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#footer-nav .nav a{
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+
+#footer-nav .nav a:hover{
+  color: #41c155;
+}
+
+
+#footer-nav .nav-brand img{
+  height: 90px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#footer-nav-hr{
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+#footer-nav hr{
+  align-items: center;
+  border: 0.5px solid white;
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  max-width: 100%
+}
+
+#footer-widgets{
+  background-color: rgba(0, 0, 0, 0.83);
+  color: #fff;
+  min-height: 275px;
+}
+
+#footer-widget-map {
+  width: 100%;
+}
+
+
+#footer-widget-info p{
+  line-height: 1.8;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#footer-widget-info a{
+  color: #ccc;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer-widget-info a:hover{
+  color: #fff;
+}
+
+#footer-widget-partner{
+  padding-top: 5px;
+}
+
+#footer-widget-partner h5{
+  font-weight: 400;
+}
+
+#footer-widget-partner img{
+  width: 90px;
+}
+
+#footer-copyright{
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+#footer-copyright .row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer-copyright-pages .row{
+  padding: 0;
+}
+
+#footer-copyright p{
+  color: #ccc;
+  font-size: 12px;
+  padding: 0;
+}
+
+#footer-copyright a{
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#footer-copyright a:hover{
+  color: #fff;
+  font-size: 12px;
+}
